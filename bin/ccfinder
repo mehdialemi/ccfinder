@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+if [ $# -le 2 ]
+then
+    display_usage
+    exit 1
+fi
+
+spark_master=spark://$1:7077
+
+case $2 in
+    GCC)
+	 main_class="ir.ac.sbu.graph.spark.clusteringco.GlobalCC"
+    	 ;;
+    LCC)
+	 main_class="ir.ac.sbu.graph.spark.clusteringco.LocalCC"
+	 ;;
+esac
+
+graph_path=$3
+
+jar_path=lib/ccfinder-jar-with-dependencies.jar
+
+echo "SPARK_HOME is set to $SPARK_HOME"
+
+$SPARK_HOME/bin/spark-submit --class $main_class  $jar_path $graph_path $spark_master
+
+display_usage() {
+	echo "ccfinder spark_master_address [LLC|GCC]  graph_path\n"
+}
