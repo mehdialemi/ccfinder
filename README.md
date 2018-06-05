@@ -1,6 +1,6 @@
 <H1>CCFinder</H1>
 Calculate <b>global and local clustering coefficient for big graphs using Apache Spark</b> <br>
-Journal paper => <a href="https://link.springer.com/epdf/10.1007/s11227-017-2040-8?author_access_token=TW4a-7JzCf89bJoDZUNMSve4RwlQNchNByi7wbcMAY6ErF9saB9cMGINzlgrVkntVxlqO8jdZ0Nkgfb_taNvC-uz--I-uXUcYtI5bthNGSzV4E1WR7_7fyLlnmRcm7A-5BhDs9qIpIcoUKMsiODygw%3D%3D">CCFinder: using Spark to find clustering coefficient in big graphs</a>
+<b>Journal Paper</b> => <a href="https://link.springer.com/epdf/10.1007/s11227-017-2040-8?author_access_token=TW4a-7JzCf89bJoDZUNMSve4RwlQNchNByi7wbcMAY6ErF9saB9cMGINzlgrVkntVxlqO8jdZ0Nkgfb_taNvC-uz--I-uXUcYtI5bthNGSzV4E1WR7_7fyLlnmRcm7A-5BhDs9qIpIcoUKMsiODygw%3D%3D">CCFinder: using Spark to find clustering coefficient in big graphs</a>
 
 
 Some considerations for running CCFinder: <br>
