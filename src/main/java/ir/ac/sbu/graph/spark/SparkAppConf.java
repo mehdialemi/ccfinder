@@ -11,6 +11,7 @@ import java.io.File;
  */
 public class SparkAppConf {
 
+    public static final String DEFAULT_GRAPH_PATH = "inputs/amazon.txt";
     private String inputPath;
     private int partitionNum;
     private SparkConf sparkConf;

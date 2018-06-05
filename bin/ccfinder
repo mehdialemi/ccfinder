@@ -18,12 +18,16 @@ case $2 in
 esac
 
 graph_path=$3
-
-jar_path=lib/ccfinder-jar-with-dependencies.jar
+jar_path=lib/ccfinder.jar
 
 echo "SPARK_HOME is set to $SPARK_HOME"
+if [ -z "$SPARK_HOME" ]
+then
+    echo "You should export SPARK_HOME to the directory of spark program"
+    exit 1
+fi
 
-$SPARK_HOME/bin/spark-submit --class $main_class  $jar_path $graph_path $spark_master
+$SPARK_HOME/bin/spark-submit --class $main_class $jar_path $graph_path $spark_master
 
 display_usage() {
 	echo "ccfinder spark_master_address [LLC|GCC]  graph_path\n"
