@@ -41,6 +41,7 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <appendAssemblyId>false</appendAssemblyId>
+                    <outputDirectory>lib</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
