@@ -9,7 +9,7 @@ Calculate <b>global and local clustering coefficient for big graphs using Apache
 <b>Some considerations before running CCFinder:</b> <br>
  - Spark version: 2.2.0
  - Java version: 1.8
- - Input graph is considered to be as the edge list, e.g.,
+ - Input graph is considered to be as edge list, e.g.,
  <a href="http://snap.stanford.edu/data/bigdata/communities/com-amazon.ungraph.txt.gz">amazon graph</a> 
  in <a href="http://snap.stanford.edu/data/index.html">Stanford Large Network Dataset Collection</a>
  - $SPARK_HOME (address of spark directory) should be set in the Environment
@@ -27,5 +27,5 @@ To get Average Global and Local Clustering Coefficient, respectively, you should
 
 
 <b>Note: </b><br>
-If input graph is located in the HDFS you should provide the complete HDFS path of the input graph, e.g., <i>
+If the input graph is located in the HDFS you should provide the complete HDFS path of the input graph, e.g., <i>
 hdfs://localhost:8020/inputs/amazon.txt </i>
