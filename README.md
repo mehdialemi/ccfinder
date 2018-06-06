@@ -17,7 +17,7 @@ Calculate <b>global and local clustering coefficient for big graphs using Apache
    - To generate it, run `mvn clean package` in the home directory of ccfinder project
 
 
-To get Global Clustering Coefficient, you should run ccfinder from the <b>project home directory</b> as: <br>
+To get Clustering Coefficient, you should run ccfinder from the <b>project home directory</b> as: <br>
 <b>bin/ccfinder $spark_master_address [LCC|GCC] $graph_path</b>
 
 For example, if we have spark_master_address = 127.0.0.1 and graph_path = inputs/amazon.txt
